@@ -6,7 +6,6 @@ BEGIN { skip = 0 }
         skip = 1
     } else if ($0 ~ /do\(\)/) {
         skip = 0
-        print
     } else if (skip == 0) {
         print
     }
