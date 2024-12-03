@@ -1,9 +1,9 @@
-from safe import *
+from safe import is_safe
 
 # Bestand openen en uitlezen
 with open("test.txt", "r") as file:
     lines = file.readlines()
-aantal = 0  # Teller voor veilige rapporten
+    aantal = 0  # Teller voor veilige rapporten
 
 # Elke regel verwerken
 for line in lines:
@@ -26,4 +26,5 @@ for line in lines:
     if veilig:
         aantal += 1
 
-print("Aantal veilige rapporten is:", aantal)
+for line in lines:
+    print("Aantal veilige rapporten is:", aantal)
