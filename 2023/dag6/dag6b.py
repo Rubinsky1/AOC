@@ -1,9 +1,6 @@
 # Variabelen voor time en distance
 
-
 aantal = 0
-som = 1
-
 with open("dag6.txt", "r") as file:
     for line in file:
         # Verwijder extra spaties en tekst, en lees het getal als één geheel
@@ -19,7 +16,4 @@ for i in range(time):
         aantal+=1
 
 
-
-
 print(aantal)
-print(time)
