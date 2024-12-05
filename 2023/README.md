@@ -1,21 +1,23 @@
 # AOC
-# dag 1 
+# dag 1 -> Trebuchet!?
 - c++ script
 
-# dag 2 
+# dag 2 -> Cube Conundrum
 - c++ script
 
-# dag 3 
+# dag 3 -> Gear Ratios
 - c++ klasse
 
-# dag 4 
+# dag 4 -> Scratchcards
 - python script
-# dag 5 
+# dag 5 -> If You Give A Seed A Fertilizer
 
-# dag 6
+# dag 6 -> Wait For It
 - python script
-# dag 7
-# dag 8
+# dag 7 -> Camel Cards
+- python script
+- gebruikt 1 file met alle defenities
+# dag 8 -> Haunted Wastelands
 # dag 9
 # dag 10
 # dag 11
