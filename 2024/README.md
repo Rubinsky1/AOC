@@ -15,8 +15,17 @@
 - python script
 # dag 5 -> Print Queue
 - python script
-# dag 6
-# dag 7
+# dag 6 -> Gaurd Gallivant
+- C++ en Python
+    * python gebruik voor deel 1 --> was zeer traag ging nooit werken voor deel 2
+    * deel 1 nagemaakt in c++
+    * Guard.h Headerfile
+    * Guard.cc
+    * Main.cc testbestand
+    * Makefile
+    * standaard.h voor standaard waarden
+# dag 7 -> bridge repair
+- python script
 # dag 8 -> Resonant Collinearity
 - c++
     * antenna.h headerfile
