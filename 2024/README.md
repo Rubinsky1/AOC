@@ -18,7 +18,12 @@
 # dag 6
 # dag 7
 # dag 8
-# dag 9
+# dag 9 -> Disk Fragmenter
+- c++
+    * cd.h headerfile
+    * cd.cc 
+    * main.cc
+    * Makefile
 # dag 10
 # dag 11
 # dag 12
