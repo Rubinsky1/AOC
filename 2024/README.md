@@ -17,7 +17,13 @@
 - python script
 # dag 6
 # dag 7
-# dag 8
+# dag 8 -> Resonant Collinearity
+- c++
+    * antenna.h headerfile
+    * antenna.cc 
+    * standaard.h voor alle standaard waardes van de array
+    * main.cc
+    * Makefile
 # dag 9 -> Disk Fragmenter
 - c++
     * cd.h headerfile
