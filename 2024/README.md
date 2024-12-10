@@ -39,7 +39,12 @@
     * cd.cc 
     * main.cc
     * Makefile
-# dag 10
+# dag 10 -> Hoof It
+- c++
+    * trail.h headerfile
+    * trail.cc 
+    * main.cc
+    * Makefile
 # dag 11
 # dag 12
 # dag 13
