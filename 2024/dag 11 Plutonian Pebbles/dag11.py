@@ -32,8 +32,8 @@ for loops in loops_range:
 # Maak een grafiek van de resultaten
 plt.plot(loops_range, output_data, marker='o', linestyle='-', color='b')
 plt.title('Resultaten van C++-programma voor verschillende loop aantallen')
-plt.xlabel('Aantal Loops')
-plt.ylabel('Output (bijv. Aantal iteraties)')
+plt.xlabel('Aantal Itteraties')
+plt.ylabel('Hoeveelheid output')
 plt.yscale('log')
 plt.grid(True)
 plt.savefig("test.png")
