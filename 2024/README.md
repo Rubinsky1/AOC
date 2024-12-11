@@ -45,7 +45,11 @@
     * trail.cc 
     * main.cc
     * Makefile
-# dag 11
+# dag 11 -> PLutonian Pebbles
+- c++
+    * main.cc
+    * Makefile
+    * Aantal loops kan je invullen door een getal na ./main in te vullen dus bijvoorbeeld ./main 25 geeft 25 loops
 # dag 12
 # dag 13
 # dag 14
