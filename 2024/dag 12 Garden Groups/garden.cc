@@ -18,21 +18,21 @@ void Garden::readInputTo2DArray(const std::string& filename) {
         if (Width == 0) {
             Width = line.size();
         }
-        std::vector<char> row(line.begin()-1, line.end()); // Converteer de hele regel naar een vector van karakters
+        std::vector<char> row(line.begin()-1, line.end()); 
         //row.erase(row.begin());
-        Field.push_back(row); // Voeg de rij toe aan het veld
+        Field.push_back(row); 
         Height++;
     }
     file.close(); // Sluit het bestand
 }
 
 void Garden::printField() {
-    for (int i = 0; i<Field.size(); i++) { // Itereer door de rijen
-        for (int j = 0; j<Field[i].size(); j++) { // Itereer door de kolommen
+    for (size_t i = 0; i<Field.size(); i++) { 
+        for (size_t j = 0; j<Field[i].size(); j++) { 
           
-          if(Field[i][j]) std::cout << Field[i][j] << " "; // Print elk karakter gevolgd door een spatie
+          if(Field[i][j]) std::cout << Field[i][j] << " "; 
         }
-        std::cout << std::endl; // Ga naar een nieuwe regel na elke rij
+        std::cout << std::endl; 
     }
 }
 
@@ -40,7 +40,7 @@ int Garden::zoekgroep1(int row, int col, std::vector<std::vector<bool>>& bezocht
     int totaal = 0;
     if (row < 0 || row >= Height || col < 0 || col >= Width || Field[row][col] != k) {//checkt of de huidige positie toegevoegd moet worden of niet
         //zo niet dan wordt de functie afgekapt
-        return 1;
+        return 1;//tel 1 rij ernaast dus hekje
     }
     if(bezocht[row][col])return  0;
     grootte++;//zet de grootte 1 omhoog omdat de groep uit  meer bestaat

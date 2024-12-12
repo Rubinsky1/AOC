@@ -10,7 +10,6 @@
 class Garden {
 private:
     std::vector<std::vector<char>> Field;
-    const std::vector<std::pair<int, int>> directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}}; // Richtingen (boven, onder, links, rechts)
     int Width = 0;
     int Height = 0;
     int zoekgroep1(int row, int col, std::vector<std::vector<bool>>& bezocht, int& grootte, char k);
