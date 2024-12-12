@@ -50,7 +50,13 @@
     * main.cc
     * Makefile
     * Aantal loops kan je invullen door een getal na ./main in te vullen dus bijvoorbeeld ./main 25 geeft 25 loops
-# dag 12
+    * Python script voert experimentje uit over alle data
+# dag 12 -> Garden Groups
+- c++
+    * main.cc
+    * garden.cc
+    * garden.h headerfile
+    * makefile
 # dag 13
 # dag 14
 # dag 15
