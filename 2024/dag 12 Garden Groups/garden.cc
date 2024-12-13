@@ -4,21 +4,35 @@
 #include <fstream>
 #include <iostream>
 
+#include <algorithm>  // Zorg ervoor dat <algorithm> is geïmporteerd
+
+void removeEmptySpaces(std::vector<char>& vec) {
+    // Gebruik std::remove om alle lege spaties (0x00) te verwijderen
+    vec.erase(std::remove(vec.begin(), vec.end(), '\0'), vec.end());
+}
+
+
 void Garden::readInputTo2DArray(const std::string& filename) {
     std::ifstream file(filename); // Open het bestand
     if (!file.is_open()) {
         std::cerr << "Kan bestand niet openen: " << filename << std::endl;
         return;
     }
-
+    std::vector<char> row;
     std::string line;
     Width = 0;
     Height = 0;
     while (std::getline(file, line)) {
+        row.clear();
         if (Width == 0) {
             Width = line.size();
         }
-        std::vector<char> row(line.begin()-1, line.end()); 
+        for(size_t i = 0; i<line.length(); i++){
+          row.push_back(line[i]);
+          std::cout<<line[i];
+        }
+        std::cout<<"\n";
+        //removeEmptySpaces(row);
         //row.erase(row.begin());
         Field.push_back(row); 
         Height++;
@@ -30,7 +44,7 @@ void Garden::printField() {
     for (size_t i = 0; i<Field.size(); i++) { 
         for (size_t j = 0; j<Field[i].size(); j++) { 
           
-          if(Field[i][j]) std::cout << Field[i][j] << " "; 
+          std::cout << Field[i][j] << " "; 
         }
         std::cout << std::endl; 
     }

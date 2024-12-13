@@ -57,7 +57,15 @@
     * garden.cc
     * garden.h headerfile
     * makefile
-# dag 13
+# dag 13 -> Claw Contraption
+- c++
+    * aanroepen met ./dag.sh
+    * sheel script converteert bestand eerst zodat leesbaar voor c++
+    * dag13.sh
+    * claw.cc
+    * claw.h
+    * main.cc
+    * Makefile
 # dag 14
 # dag 15
 # dag 16
