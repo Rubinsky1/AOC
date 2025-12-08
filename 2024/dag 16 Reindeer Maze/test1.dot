@@ -1,0 +1,7 @@
+digraph Table {rankdir="LR"
+  node [shape=circle];
+0 -> 1301
+1301 -> 1201
+1301 -> 1302
+  0 [style=invis];
+}
