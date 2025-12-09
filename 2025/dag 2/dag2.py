@@ -1,3 +1,6 @@
+import sys
+import time
+
 def check_repetition(num_str):
   length = len(num_str)
   for i in range(1, length // 2 + 1):
@@ -32,9 +35,14 @@ def numRepetitions(lines, partA = True):
   return count
 
 
-with open("dag2.txt", "r") as file:
-  # Lees elke regel en splits op basis van whitespace
-  lines = file.readlines()
-   
-print("Part A:", numRepetitions(lines))
-print("Part B:", numRepetitions(lines, partA=False))
+def main():
+  start_time = time.time()
+  filename = sys.argv[1]
+  with open(filename, "r") as file:
+    lines = file.readlines()
+  print("part 1:",numRepetitions(lines))
+  print("part 2:",numRepetitions(lines, False))
+  print("Execution time: %s seconds" % (time.time() - start_time))
+
+if __name__ == "__main__":
+  main()

@@ -1,4 +1,5 @@
 import sys
+import time
 
 def largest_Xnumber(lines, ammount=12):
   sum = 0
@@ -19,11 +20,13 @@ def largest_Xnumber(lines, ammount=12):
   return sum
 
 def main():
+  start_time = time.time()
   filename = sys.argv[1]
   with open(filename, "r") as file:
     lines = file.readlines()
   print("part 1:",largest_Xnumber(lines, ammount=2))
   print("part 2:",largest_Xnumber(lines, ammount=12))
-
+  print("Execution time: %s seconds" % (time.time() - start_time))
+  
 if __name__ == "__main__":
   main()

@@ -1,4 +1,5 @@
 import sys
+import time
 
 def dag1(lines, part2=False):
   rotations = zip(*((line[0], int(line[1:])) for line in lines))
@@ -16,11 +17,13 @@ def dag1(lines, part2=False):
   return antwoord
 
 def main():
+  start_time = time.time()
   filename = sys.argv[1]
   with open(filename, "r") as file:
     lines = file.readlines()
   print("part 1:",dag1(lines))
   print("part 2:",dag1(lines, True))
+  print("Execution time: %s seconds" % (time.time() - start_time))
 
 if __name__ == "__main__":
   main()
