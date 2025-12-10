@@ -24,11 +24,11 @@ def dag9(lines, part2=False):
         continue
         
       if part2:
-        # Compute rectangle bounds once
+
         min_x, max_x = min(xi, xj), max(xi, xj)
         min_y, max_y = min(yi, yj), max(yi, yj)
         
-        # Check for overlap with precomputed bboxes
+
         overlap = any(max_x > bbox_min_x and bbox_max_x > min_x and 
                       max_y > bbox_min_y and bbox_max_y > min_y
                       for bbox_min_x, bbox_max_x, bbox_min_y, bbox_max_y in bboxes)
