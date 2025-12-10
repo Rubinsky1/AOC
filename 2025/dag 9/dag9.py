@@ -6,7 +6,7 @@ def dag9(lines, part2=False):
   n = len(points)
   biggest = 0
   hulp = False
-  # Precompute bounding boxes reduces time complexity significantly
+
   if part2:
     bboxes = [(min(points[k][0], points[k+1][0]), 
                max(points[k][0], points[k+1][0]),
